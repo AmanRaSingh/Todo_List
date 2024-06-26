@@ -8,9 +8,9 @@ function App() {
   return (
     <>
 
-      <Menu/>
+      {/* <Menu/> */}
       {/* <E_Commerce /> */}
-{/* <Login/> */}
+<Login/>
     </>
   );
 }

@@ -65,6 +65,7 @@ export default class DataList extends Component<{}, states> {
                     <Typography sx={{fontSize:"3rem"}}>Todo List</Typography>
 
                     <TextField value={this.state.textfield} onChange={(e) => this.setState({ textfield: e.target.value })} />
+                        
                     {edit ? (<Button variant="contained" onClick={this.handleUpdate}>Update</Button>) : (<Button variant="contained" onClick={this.handleAdd}>Add</Button>
                     )}
 
