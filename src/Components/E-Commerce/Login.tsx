@@ -6,6 +6,7 @@ interface state {
     password: string;
     submittedData: { username: string; email: string; password: string }[];
     // error: { username: string; email: string; password: string }[];
+    error:{}
 }
 export default class Login extends Component<{}, state> {
     constructor(props: {}) {
@@ -36,14 +37,13 @@ export default class Login extends Component<{}, state> {
             username: "", email: "", password: "",
         })
         localStorage.setItem("submittedData", JSON.stringify(retrived));
-        if (!e.target.value) {
-            // setError()
-        }
+
 
     }
     formvalidation = () => {
-        const { submittedData } = this.state;
-        // const error: 
+        const { submittedData } = this.state.submittedData;
+        const error: {};
+        // let formIsValid
     }
     render() {
         const { submittedData } = this.state
